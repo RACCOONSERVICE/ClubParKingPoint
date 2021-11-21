@@ -27,7 +27,6 @@ public class VistaIngreso extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        txtSalida = new javax.swing.JTextField();
         txtNombre = new javax.swing.JTextField();
         txtCedula = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -36,13 +35,11 @@ public class VistaIngreso extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         txtApellido = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JTextField();
         txtIngreso = new javax.swing.JTextField();
         txtMarca = new javax.swing.JTextField();
         txtModelo = new javax.swing.JTextField();
-        txtPago = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtColor = new javax.swing.JTextField();
         botonAgregar = new javax.swing.JButton();
@@ -50,7 +47,6 @@ public class VistaIngreso extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         txtPlaca = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,10 +54,6 @@ public class VistaIngreso extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Algerian", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 0));
         jLabel1.setText("CLUB PARKING POING");
-
-        txtSalida.setBackground(new java.awt.Color(0, 0, 0));
-        txtSalida.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        txtSalida.setForeground(new java.awt.Color(255, 255, 0));
 
         txtNombre.setBackground(new java.awt.Color(0, 0, 0));
         txtNombre.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
@@ -99,10 +91,6 @@ public class VistaIngreso extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 0));
         jLabel8.setText("Fecha de Ingreso:");
 
-        jLabel15.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel15.setText("Fecha de Salida:");
-
         txtApellido.setBackground(new java.awt.Color(0, 0, 0));
         txtApellido.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         txtApellido.setForeground(new java.awt.Color(255, 255, 0));
@@ -122,10 +110,6 @@ public class VistaIngreso extends javax.swing.JFrame {
         txtModelo.setBackground(new java.awt.Color(0, 0, 0));
         txtModelo.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         txtModelo.setForeground(new java.awt.Color(255, 255, 0));
-
-        txtPago.setBackground(new java.awt.Color(0, 0, 0));
-        txtPago.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        txtPago.setForeground(new java.awt.Color(255, 255, 0));
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel3.setText("Registrar Vehiculo");
@@ -155,10 +139,6 @@ public class VistaIngreso extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 255, 0));
         jLabel12.setText("Color:");
 
-        jLabel13.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel13.setText("Pago:");
-
         txtPlaca.setBackground(new java.awt.Color(0, 0, 0));
         txtPlaca.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         txtPlaca.setForeground(new java.awt.Color(255, 255, 0));
@@ -181,11 +161,9 @@ public class VistaIngreso extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel15))
+                            .addComponent(jLabel7))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtSalida, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtIngreso, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -209,13 +187,9 @@ public class VistaIngreso extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(botonAgregar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtColor, javax.swing.GroupLayout.DEFAULT_SIZE, 185, Short.MAX_VALUE)
-                                .addComponent(txtPago)))))
+                            .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(81, 81, 81))
         );
         layout.setVerticalGroup(
@@ -247,11 +221,8 @@ public class VistaIngreso extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
                             .addComponent(txtIngreso, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel15)
-                            .addComponent(txtSalida, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(botonAgregar))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                        .addComponent(botonAgregar)
                         .addGap(84, 84, 84))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
@@ -271,10 +242,6 @@ public class VistaIngreso extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel12)
                             .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(47, 47, 47)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13)
-                            .addComponent(txtPago, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
@@ -326,8 +293,6 @@ public class VistaIngreso extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -343,9 +308,7 @@ public class VistaIngreso extends javax.swing.JFrame {
     public javax.swing.JTextField txtMarca;
     public javax.swing.JTextField txtModelo;
     public javax.swing.JTextField txtNombre;
-    public javax.swing.JTextField txtPago;
     public javax.swing.JTextField txtPlaca;
-    public javax.swing.JTextField txtSalida;
     public javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }

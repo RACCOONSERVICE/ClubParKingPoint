@@ -3,14 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package clubparkingpoint.modelos;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
 /**
  *
  * @author user
  */
-public class ContultaUsuario extends ModeloBD {
+public class ConsultaUsuario extends ModeloBD{
     PreparedStatement consultaSQL;
     ResultSet resultadoSQL;
     

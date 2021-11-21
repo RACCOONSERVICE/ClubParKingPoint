@@ -17,7 +17,7 @@ public class ConsultaVehiculo extends ModeloBD{
     
      public boolean insertarVehiculo(Vehiculo vehiculo){    
         Connection conexion = conectarBD();
-        String query="INSERT INTO vehiculo(placa,marca,modelo,color,totalPagoVehiculo,cc,id_park)" + "VALUES (?,?,?,?,?,?,?,?,?)" ;           
+        String query="INSERT INTO vehiculo(placa,marca,modelo,color,totalPagoVehiculo,cc)" + "VALUES (?,?,?,?,?,?,?,?)" ;           
     try{    
         consultaSQL=conexion.prepareStatement(query);
         consultaSQL.setString(1,vehiculo.getPlaca());
@@ -26,7 +26,7 @@ public class ConsultaVehiculo extends ModeloBD{
         consultaSQL.setString(4,vehiculo.getColor());
         consultaSQL.setInt(5,vehiculo.getTotalPagoVehiculo());
         consultaSQL.setInt(6,vehiculo.getCc());
-        consultaSQL.setInt(7,vehiculo.getId_park());
+
         
         int resultado=consultaSQL.executeUpdate();
         
@@ -61,7 +61,6 @@ public class ConsultaVehiculo extends ModeloBD{
                 vehiculo.setColor(resultadoSQL.getString("color"));
                 vehiculo.setTotalPagoVehiculo(resultadoSQL.getInt("totalPagoVehiculo"));
                 vehiculo.setCc(resultadoSQL.getInt("cc"));
-                vehiculo.setId_park(resultadoSQL.getInt("id_park"));
                 return vehiculo;
             }else{
                 return null;

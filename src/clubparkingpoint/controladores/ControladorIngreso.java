@@ -9,5 +9,6 @@ package clubparkingpoint.controladores;
  * @author user
  */
 public class ControladorIngreso {
-    
+   
+
 }

@@ -15,20 +15,18 @@ public class Vehiculo {
     private String color;
     private int totalPagoVehiculo;
     private int cc;
-    private int id_park;
 
     public Vehiculo() {
     }
 
-    public Vehiculo(String placa, String marca, String modelo, String color, int totalPagoVehiculo, int cc, int id_park) {
+    public Vehiculo(String placa, String marca, String modelo, String color, int totalPagoVehiculo, int cc) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
         this.totalPagoVehiculo = totalPagoVehiculo;
         this.cc = cc;
-        this.id_park = id_park;
-    }
+       }
 
     public String getPlaca() {
         return placa;
@@ -76,13 +74,5 @@ public class Vehiculo {
 
     public void setCc(int cc) {
         this.cc = cc;
-    }
-
-    public int getId_park() {
-        return id_park;
-    }
-
-    public void setId_park(int id_park) {
-        this.id_park = id_park;
     }
 }
