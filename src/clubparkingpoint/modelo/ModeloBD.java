@@ -1,18 +1,13 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+coneccion a la base de datos
  */
-package clubparkingpoint.modelos;
+package clubparkingpoint.modelo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-/**
- *
- * @author user
- */
 public class ModeloBD {
-     private String servidor="jdbc:mysql://localhost/club_parking_poing";
+    private String servidor="jdbc:mysql://localhost/club_parking_point";
     private String usuario="root";
     private String password="";
 

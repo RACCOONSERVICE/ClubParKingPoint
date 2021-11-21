@@ -1,20 +1,23 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+main de club parkig point 
  */
 package clubparkingpoint;
 
-/**
- *
- * @author user
- */
+import clubparkingpoint.controladores.ControladorHome;
+import clubparkingpoint.modelo.Usuario;
+import clubparkingpoint.modelo.Vehiculo;
+import clubparkingpoint.vistas.VistaHome;
+
+
 public class ClubParkingPoint {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        VistaHome vistahome = new VistaHome();
+        vistahome.setVisible(true);
+        Usuario usuario = new Usuario();
+        Vehiculo vehiculo = new Vehiculo();
+        ControladorHome controlador = new ControladorHome(vistahome,usuario,vehiculo);
+        
     }
     
 }

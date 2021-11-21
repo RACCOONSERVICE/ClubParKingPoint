@@ -1,32 +1,26 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ objeto vehiculo
  */
-package clubparkingpoint.modelos;
+package clubparkingpoint.modelo;
 
-/**
- *
- * @author user
- */
+
 public class Vehiculo {
     private String placa;
     private String marca;
     private String modelo;
     private String color;
     private int totalPagoVehiculo;
-    private int cc;
 
     public Vehiculo() {
     }
 
-    public Vehiculo(String placa, String marca, String modelo, String color, int totalPagoVehiculo, int cc) {
+    public Vehiculo(String placa, String marca, String modelo, String color, int totalPagoVehiculo) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
         this.totalPagoVehiculo = totalPagoVehiculo;
-        this.cc = cc;
-       }
+    }
 
     public String getPlaca() {
         return placa;
@@ -66,13 +60,5 @@ public class Vehiculo {
 
     public void setTotalPagoVehiculo(int totalPagoVehiculo) {
         this.totalPagoVehiculo = totalPagoVehiculo;
-    }
-
-    public int getCc() {
-        return cc;
-    }
-
-    public void setCc(int cc) {
-        this.cc = cc;
     }
 }

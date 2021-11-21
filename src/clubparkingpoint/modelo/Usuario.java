@@ -1,32 +1,29 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+objeto usurio
  */
-package clubparkingpoint.modelos;
+package clubparkingpoint.modelo;
 
-/**
- *
- * @author user
- */
 public class Usuario {
-          
+        
     private String cedula;
     private String nombre;
     private String apellido;
     private String telefono;
     private String fechaIngreso;
     private String fechaSalida;
+    private String idPlaca;
 
     public Usuario() {
     }
 
-    public Usuario(String cedula, String nombre, String apellido, String telefono, String fechaIngreso, String fechaSalida) {
+    public Usuario(String cedula, String nombre, String apellido, String telefono, String fechaIngreso, String fechaSalida, String idPlaca) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.fechaIngreso = fechaIngreso;
         this.fechaSalida = fechaSalida;
+        this.idPlaca = idPlaca;
     }
 
     public String getCedula() {
@@ -76,4 +73,14 @@ public class Usuario {
     public void setFechaSalida(String fechaSalida) {
         this.fechaSalida = fechaSalida;
     }
+
+    public String getIdPlaca() {
+        return idPlaca;
+    }
+
+    public void setIdPlaca(String idPlaca) {
+        this.idPlaca = idPlaca;
+    }
+         
+
 }
